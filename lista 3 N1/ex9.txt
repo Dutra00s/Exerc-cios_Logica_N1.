@@ -1,0 +1,45 @@
+EXERCÍCIO 9 - Consumo de combustível
+
+Entradas:
+DIstancia percorrida em km
+Combustível utilizados em litros
+
+Processamento
+consumo = distancia / litro
+
+Saida
+consumo médio em km/L
+
+Pseudocodigo
+ALGORITMO ConsumoCombustível
+
+VAR
+    distancia, litros, consumo: real
+
+INÍCIO
+    LEIA(distancia)
+    LEIA(litros)
+
+    SE litros > 0 ENTAO
+       consumo <- distancia / litros
+       ESCREVA("Consumo médio: ", consumo, "km/L")
+   SENAO
+       ESCREVA("A quantidade de litros deve ser maior que zero.")
+   FIMSE
+
+FIM
+
+Fluxograma
+[INÍCIO]
+    ↓
+[Leia distância e litros]
+    ↓
+[litros > 0?]
+   ↙       ↘
+ NÃO       SIM
+  ↓         ↓
+[Erro] [consumo ← distância/litros]
+            ↓
+       [Mostre consumo]
+            ↘
+            [FIM]

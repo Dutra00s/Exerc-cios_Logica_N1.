@@ -1,0 +1,67 @@
+ EXERCÍCIO 20 — Calculadora
+
+Entradas
+Primeiro número
+Segundo número
+Operação
+
+Processamento
+Executar +, -, * ou /
+Verificar divisão por zero
+
+Saída
+Resultado ou mensagem de erro
+
+Pseudocódigo
+ALGORITMO Calculadora
+
+VAR
+    n1, n2, resultado: real
+    operacao: caractere
+
+INÍCIO
+    LEIA(n1)
+    LEIA(n2)
+    LEIA(operacao)
+
+    SE operacao = "+" ENTÃO
+        resultado ← n1 + n2
+        ESCREVA(resultado)
+
+    SENÃO SE operacao = "-" ENTÃO
+        resultado ← n1 - n2
+        ESCREVA(resultado)
+
+    SENÃO SE operacao = "*" ENTÃO
+        resultado ← n1 * n2
+        ESCREVA(resultado)
+
+    SENÃO SE operacao = "/" ENTÃO
+        SE n2 = 0 ENTÃO
+            ESCREVA("Erro: divisão por zero.")
+        SENÃO
+            resultado ← n1 / n2
+            ESCREVA(resultado)
+        FIMSE
+
+    SENÃO
+        ESCREVA("Operação inválida.")
+    FIMSE
+
+FIM
+Fluxograma
+[INÍCIO]
+    ↓
+[Leia n1, n2 e operação]
+    ↓
+[Qual operação?]
+  ├─ + → [n1+n2]
+  ├─ - → [n1-n2]
+  ├─ * → [n1*n2]
+  └─ / → [n2 = 0?]
+              ├─ SIM → [Erro]
+              └─ NÃO → [n1/n2]
+                       ↓
+                 [Mostre resultado]
+                       ↓
+                      [FIM]

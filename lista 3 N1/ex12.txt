@@ -1,0 +1,49 @@
+EXERCÍCIO 12 — Número positivo ou negativo
+
+Entradas
+Um número
+
+Processamento
+Comparar o número com zero
+
+Saída
+Positivo, negativo ou zero
+
+Pseudocódigo
+ALGORITMO PositivoNegativo
+
+VAR
+    numero: real
+
+INÍCIO
+    LEIA(numero)
+
+    SE numero > 0 ENTÃO
+        ESCREVA("Positivo")
+
+    SENÃO SE numero < 0 ENTÃO
+        ESCREVA("Negativo")
+
+    SENÃO
+        ESCREVA("Zero")
+    FIMSE
+
+FIM
+
+Fluxograma
+[INÍCIO]
+    ↓
+[Leia número]
+    ↓
+[número > 0?]
+ ↙        ↘
+SIM       NÃO
+ ↓         ↓
+[Positivo] [número < 0?]
+             ↙       ↘
+           SIM       NÃO
+            ↓         ↓
+       [Negativo]   [Zero]
+             ↘       ↙
+               [FIM]
+Explicação

@@ -1,0 +1,61 @@
+EXERCÍCIO 19 — Cálculo do IMC
+
+Entradas
+Peso
+Altura
+
+Processamento
+
+IMC = peso / altura²
+
+Classificação conforme as faixas do enunciado.
+
+Saídas
+IMC
+Classificação
+
+Pseudocódigo
+ALGORITMO CalculoIMC
+
+VAR
+    peso, altura, imc: real
+
+INÍCIO
+    LEIA(peso)
+    LEIA(altura)
+
+    imc ← peso / (altura * altura)
+
+    SE imc < 18.5 ENTÃO
+        classificacao ← "Abaixo do peso"
+    SENÃO SE imc < 25 ENTÃO
+        classificacao ← "Peso adequado"
+    SENÃO SE imc < 30 ENTÃO
+        classificacao ← "Sobrepeso"
+    SENÃO
+        classificacao ← "Obesidade"
+    FIMSE
+
+    ESCREVA("IMC: ", imc)
+    ESCREVA("Classificação: ", classificacao)
+
+FIM
+
+Fluxograma
+[INÍCIO]
+    ↓
+[Leia peso e altura]
+    ↓
+[Calcule IMC]
+    ↓
+[IMC < 18,5?] → SIM → [Abaixo do peso]
+    ↓ NÃO
+[IMC < 25?] → SIM → [Peso adequado]
+    ↓ NÃO
+[IMC < 30?] → SIM → [Sobrepeso]
+    ↓ NÃO
+[Obesidade]
+    ↓
+[Mostre IMC e classificação]
+    ↓
+[FIM]

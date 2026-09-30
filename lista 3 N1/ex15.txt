@@ -1,0 +1,58 @@
+EXERCÍCIO 15 — Maior entre três números
+
+Entradas
+Três número
+
+Processamento
+Comparar os três valores
+
+Saída
+Maior número
+
+Pseudocódigo
+ALGORITMO MaiorTresNumeros
+
+VAR
+    n1, n2, n3, maior: real
+
+INÍCIO
+    LEIA(n1)
+    LEIA(n2)
+    LEIA(n3)
+
+    maior ← n1
+
+    SE n2 > maior ENTÃO
+        maior ← n2
+    FIMSE
+
+    SE n3 > maior ENTÃO
+        maior ← n3
+    FIMSE
+
+    ESCREVA("Maior número: ", maior)
+
+FIM
+
+Fluxograma
+[INÍCIO]
+    ↓
+[Leia n1, n2, n3]
+    ↓
+[maior ← n1]
+    ↓
+[n2 > maior?]
+  ↙       ↘
+SIM       NÃO
+ ↓         ↓
+[maior←n2] 
+    ↘     ↙
+   [n3 > maior?]
+     ↙       ↘
+   SIM       NÃO
+    ↓         ↓
+[maior←n3]    |
+     ↘       ↙
+   [Mostre maior]
+        ↓
+      [FIM]

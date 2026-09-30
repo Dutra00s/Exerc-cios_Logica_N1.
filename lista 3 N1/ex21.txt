@@ -1,0 +1,36 @@
+EXERCÍCIO 21 — Contagem crescente
+
+Entrada
+Não possui entrada
+
+Processamento
+Repetir de 1 até 10
+
+Saída
+Números de 1 a 10
+
+Pseudocódigo
+ALGORITMO ContagemCrescente
+
+VAR
+    i: inteiro
+
+INÍCIO
+    PARA i DE 1 ATÉ 10 FAÇA
+        ESCREVA(i)
+    FIMPARA
+
+FIM
+
+Fluxograma
+[INÍCIO]
+    ↓
+[i ← 1]
+    ↓
+[i <= 10?] ← NÃO ← [FIM]
+    ↓ SIM
+[Mostre i]
+    ↓
+[i ← i + 1]
+    ↓
+(volta para i <= 10)

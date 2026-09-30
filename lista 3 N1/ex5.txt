@@ -1,0 +1,37 @@
+EXERCÍCIO 5 — Área do retângulo
+Entradas
+Base.
+Altura.
+Processamento
+
+area = base × altura
+
+Saída
+Área do retângulo.
+
+Pseudocódigo
+ALGORITMO AreaRetangulo
+
+VAR
+    base, altura, area: real
+
+INÍCIO
+    LEIA(base)
+    LEIA(altura)
+
+    area ← base * altura
+
+    ESCREVA("Área: ", area)
+
+FIM
+
+Fluxograma
+[INÍCIO]
+    ↓
+[Leia base e altura]
+    ↓
+[area ← base × altura]
+    ↓
+[Mostre área]
+    ↓
+[FIM]

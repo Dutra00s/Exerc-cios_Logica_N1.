@@ -1,0 +1,41 @@
+EXERCÍCIO 14 — Maior entre dois números
+
+Entradas
+Dois números diferentes
+
+Processamento
+Comparar os dois números
+
+Saída
+Maior número
+
+Pseudocódigo
+ALGORITMO MaiorDoisNumeros
+
+VAR
+    n1, n2: real
+
+INÍCIO
+    LEIA(n1)
+    LEIA(n2)
+
+    SE n1 > n2 ENTÃO
+        ESCREVA("Maior: ", n1)
+    SENÃO
+        ESCREVA("Maior: ", n2)
+    FIMSE
+
+FIM
+
+Fluxograma
+[INÍCIO]
+    ↓
+[Leia n1 e n2]
+    ↓
+[n1 > n2?]
+   ↙       ↘
+ SIM       NÃO
+  ↓          ↓
+[Mostre n1] [Mostre n2]
+   ↘        ↙
+      [FIM]

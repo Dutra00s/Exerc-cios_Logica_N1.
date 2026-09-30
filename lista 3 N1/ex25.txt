@@ -1,0 +1,46 @@
+EXERCÍCIO 25 — Soma de 1 até N
+
+Entrada
+Número inteiro positivo N
+
+Processamento
+Somar todos os números de 1 até N
+
+Saída
+Soma
+
+Pseudocódigo
+ALGORITMO SomaAteN
+
+VAR
+    N, i, soma: inteiro
+
+INÍCIO
+    LEIA(N)
+
+    soma ← 0
+
+    PARA i DE 1 ATÉ N FAÇA
+        soma ← soma + i
+    FIMPARA
+
+    ESCREVA("Soma: ", soma)
+
+FIM
+
+Fluxograma
+[INÍCIO]
+    ↓
+[Leia N]
+    ↓
+[soma ← 0]
+    ↓
+[i ← 1]
+    ↓
+[i <= N?] ─ NÃO → [Mostre soma] → [FIM]
+    ↓ SIM
+[soma ← soma + i]
+    ↓
+[i ← i + 1]
+    ↓
+[volta]

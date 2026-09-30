@@ -1,0 +1,42 @@
+EXERCÍCIO 2 — Soma de dois números
+Entradas: Primeiro número inteiro.
+Segundo número inteiro.
+Processamento: Calcular soma = primeiro + segundo.
+Saídas:
+Primeiro número.
+Segundo número.
+Soma.
+
+Pseudocódigo
+ALGORITMO SomaDoisNumeros
+
+VAR
+    n1, n2, soma: inteiro
+
+INÍCIO
+    ESCREVA("Digite o primeiro número: ")
+    LEIA(n1)
+
+    ESCREVA("Digite o segundo número: ")
+    LEIA(n2)
+
+    soma ← n1 + n2
+
+    ESCREVA("Primeiro número: ", n1)
+    ESCREVA("Segundo número: ", n2)
+    ESCREVA("Soma: ", soma)
+
+FIM
+
+Fluxograma:
+[INÍCIO]
+    ↓
+[Leia n1]
+    ↓
+[Leia n2]
+    ↓
+[soma ← n1 + n2]
+    ↓
+[Mostre n1, n2 e soma]
+    ↓
+[FIM]

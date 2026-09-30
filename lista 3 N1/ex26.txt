@@ -1,0 +1,54 @@
+EXERCÍCIO 26 — Média da turma
+
+Entradas
+Quantidade de alunos
+Nota de cada aluno
+
+Processamento
+Somar todas as notas
+Dividir pela quantidade de alunos
+
+Saída
+Média geral
+
+Pseudocódigo
+ALGORITMO MediaTurma
+
+VAR
+    quantidade, i: inteiro
+    nota, soma, media: real
+
+INÍCIO
+    LEIA(quantidade)
+
+    soma ← 0
+
+    PARA i DE 1 ATÉ quantidade FAÇA
+        LEIA(nota)
+        soma ← soma + nota
+    FIMPARA
+
+    media ← soma / quantidade
+
+    ESCREVA("Média geral: ", media)
+
+FIM
+
+Fluxograma
+[INÍCIO]
+    ↓
+[Leia quantidade]
+    ↓
+[soma ← 0]
+    ↓
+[i ← 1]
+    ↓
+[i <= quantidade?] ─ NÃO → [Calcule média] → [Mostre] → [FIM]
+    ↓ SIM
+[Leia nota]
+    ↓
+[soma ← soma + nota]
+    ↓
+[i ← i + 1]
+    ↓
+[volta]

@@ -1,0 +1,48 @@
+EXERCÍCIO 10 — Valor da compra
+
+Entradas
+Nome do produto.
+Quantidade.
+Preço unitário
+
+Processamento
+
+total = quantidade × preçoUnitario
+
+Saída
+Valor total da compra.
+Pseudocódigo
+
+ALGORITMO ValorCompra
+
+VAR
+    produto: caractere
+    quantidade: inteiro
+    preco, total: real
+
+INÍCIO
+    LEIA(produto)
+    LEIA(quantidade)
+    LEIA(preco)
+
+    total ← quantidade * preco
+
+    ESCREVA("Produto: ", produto)
+    ESCREVA("Valor total: R$ ", total)
+
+FIM
+
+Fluxograma
+[INÍCIO]
+    ↓
+[Leia produto]
+    ↓
+[Leia quantidade]
+    ↓
+[Leia preço]
+    ↓
+[total ← quantidade × preço]
+    ↓
+[Mostre produto e total]
+    ↓
+[FIM]

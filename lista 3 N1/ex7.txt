@@ -1,0 +1,36 @@
+EXERCÍCIO 7 - Conversão de temperatura
+
+Entradas 
+Temperatura em celsius
+
+Processamento
+F = (C x 9 / 5) + 32
+
+Saida
+Temperatura em fahrenheit
+
+Pseudocódigo
+ALGORITMO CelsiusFahrenheit
+
+VAR
+    C, F: real
+
+INÍCIO
+    LEIA(C)
+
+    F <- (C * 9 / 5) + 32
+
+    ESCREVA("Temperatura em fahrenheit: ", F)
+
+FIM
+
+Fluxograma
+[INÍCIO]
+    ↓
+[Leia Celsius]
+    ↓
+[F ← (C × 9 / 5) + 32]
+    ↓
+[Mostre Fahrenheit]
+    ↓
+[FIM]

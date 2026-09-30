@@ -1,0 +1,41 @@
+EXERCÍCIO 6 — Área do círculo
+
+Entradas
+Raio.
+Processamento
+
+area = 3,14159 × raio²
+
+Saída
+Área do círculo.
+
+Pseudocódigo
+ALGORITMO AreaCirculo
+
+VAR
+    raio, area: real
+    PI: real
+
+INÍCIO
+    PI ← 3,14159
+
+    LEIA(raio)
+
+    area ← PI * raio * raio
+
+    ESCREVA("Área do círculo: ", area)
+
+FIM
+
+Fluxograma
+[INÍCIO]
+    ↓
+[PI ← 3,14159]
+    ↓
+[Leia raio]
+    ↓
+[area ← PI × raio × raio]
+    ↓
+[Mostre área]
+    ↓
+[FIM]

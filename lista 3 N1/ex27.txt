@@ -1,0 +1,64 @@
+EXERCÍCIO 27 — Aprovados e reprovados
+
+Entradas
+10 notas
+
+Processamento
+Nota ≥ 7 → aprovado
+Nota < 7 → reprovado
+Contar cada grupo
+Calcular percentual de aprovação
+
+Saídas
+Quantidade de aprovados.
+Quantidade de reprovados.
+Percentual de aprovação.
+Pseudocódigo
+ALGORITMO AprovadosReprovados
+
+VAR
+    i, aprovados, reprovados: inteiro
+    nota, percentual: real
+
+INÍCIO
+    aprovados ← 0
+    reprovados ← 0
+
+    PARA i DE 1 ATÉ 10 FAÇA
+        LEIA(nota)
+
+        SE nota >= 7 ENTÃO
+            aprovados ← aprovados + 1
+        SENÃO
+            reprovados ← reprovados + 1
+        FIMSE
+    FIMPARA
+
+    percentual ← aprovados * 100 / 10
+
+    ESCREVA("Aprovados: ", aprovados)
+    ESCREVA("Reprovados: ", reprovados)
+    ESCREVA("Percentual de aprovação: ", percentual, "%")
+
+FIM
+Fluxograma
+[INÍCIO]
+    ↓
+[aprovados ← 0]
+[reprovados ← 0]
+    ↓
+[i ← 1]
+    ↓
+[i <= 10?] ─ NÃO → [Calcule percentual] → [Mostre] → [FIM]
+    ↓ SIM
+[Leia nota]
+    ↓
+[nota >= 7?]
+ ↙          ↘
+SIM         NÃO
+ ↓           ↓
+[aprovados++] [reprovados++]
+       ↘     ↙
+      [i ← i + 1]
+           ↓
+         [volta]

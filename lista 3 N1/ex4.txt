@@ -1,0 +1,38 @@
+EXERCÍCIO 4 — Média do aluno
+
+Entradas
+Três notas.
+Processamento
+
+media = (N1 + N2 + N3) / 3
+
+Saída
+Média final.
+
+Pseudocódigo
+ALGORITMO MediaAluno
+
+VAR
+    n1, n2, n3, media: real
+
+INÍCIO
+    LEIA(n1)
+    LEIA(n2)
+    LEIA(n3)
+
+    media ← (n1 + n2 + n3) / 3
+
+    ESCREVA("Média final: ", media)
+
+FIM
+Fluxograma
+
+[INÍCIO]
+    ↓
+[Leia N1, N2 e N3]
+    ↓
+[media ← (N1+N2+N3)/3]
+    ↓
+[Mostre média]
+    ↓
+[FIM]

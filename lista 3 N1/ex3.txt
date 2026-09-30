@@ -1,0 +1,64 @@
+EXERCÍCIO 3 — Quatro operações
+Entradas
+Dois números.
+
+Processamento
+Soma.
+Subtração.
+Multiplicação.
+Divisão.
+
+Saídas
+Resultado das quatro operações.
+
+Pseudocódigo
+ALGORITMO QuatroOperacoes
+
+VAR
+    n1, n2: real
+    soma, subtracao, multiplicacao, divisao: real
+
+INÍCIO
+    ESCREVA("Digite o primeiro número: ")
+    LEIA(n1)
+
+    ESCREVA("Digite o segundo número: ")
+    LEIA(n2)
+
+    soma ← n1 + n2
+    subtracao ← n1 - n2
+    multiplicacao ← n1 * n2
+
+    SE n2 ≠ 0 ENTÃO
+        divisao ← n1 / n2
+    FIMSE
+
+    ESCREVA("Soma: ", soma)
+    ESCREVA("Subtração: ", subtracao)
+    ESCREVA("Multiplicação: ", multiplicacao)
+
+    SE n2 ≠ 0 ENTÃO
+        ESCREVA("Divisão: ", divisao)
+    SENÃO
+        ESCREVA("Não é possível dividir por zero.")
+    FIMSE
+
+FIM
+
+Fluxograma
+[INÍCIO]
+    ↓
+[Leia n1 e n2]
+    ↓
+[Calcule soma, subtração e multiplicação]
+    ↓
+[n2 = 0?]
+   ↙       ↘
+ SIM       NÃO
+  ↓          ↓
+[Não       [Calcule
+ divide]    divisão]
+   ↘       ↙
+ [Mostre resultados]
+       ↓
+     [FIM]

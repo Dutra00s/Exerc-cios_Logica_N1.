@@ -1,0 +1,29 @@
+﻿EXERCÍCIO 1 — Saudação
+Entradas: Nome da pessoa.
+Processamento: Juntar o nome à mensagem de boas-vindas.
+Saída: Olá, [nome]! Seja bem-vindo(a) à disciplina de Lógica de Programação.
+
+Pseudocódigo:
+ALGORITMO Saudacao
+
+VAR
+    nome: caractere
+
+INÍCIO
+    ESCREVA("Digite seu nome: ")
+    LEIA(nome)
+
+    ESCREVA("Olá, ", nome, "! Seja bem-vindo(a) à disciplina de Lógica de Programação.")
+
+FIM
+
+Fluxograma:
+[INÍCIO]
+    ↓
+[Leia o nome]
+    ↓
+[Monte a mensagem de saudação]
+    ↓
+[Apresente a mensagem]
+    ↓
+[FIM]

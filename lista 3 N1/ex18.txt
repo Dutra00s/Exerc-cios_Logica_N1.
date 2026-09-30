@@ -1,0 +1,51 @@
+EXERCÍCIO 18 — Faixa etária
+
+Entrada
+Idade
+Processamento
+
+Classificar:
+
+0–12 → Criança
+13–17 → Adolescente
+18–59 → Adulto
+60+ → Idoso
+
+Saída
+Classificação
+
+Pseudocódigo
+ALGORITMO FaixaEtaria
+
+VAR
+    idade: inteiro
+
+INÍCIO
+    LEIA(idade)
+
+    SE idade <= 12 ENTÃO
+        ESCREVA("Criança")
+    SENÃO SE idade <= 17 ENTÃO
+        ESCREVA("Adolescente")
+    SENÃO SE idade <= 59 ENTÃO
+        ESCREVA("Adulto")
+    SENÃO
+        ESCREVA("Idoso")
+    FIMSE
+
+FIM
+Fluxograma
+
+[INÍCIO]
+    ↓
+[Leia idade]
+    ↓
+[idade <= 12?] → SIM → [Criança]
+    ↓ NÃO
+[idade <= 17?] → SIM → [Adolescente]
+    ↓ NÃO
+[idade <= 59?] → SIM → [Adulto]
+    ↓ NÃO
+[Idoso]
+    ↓
+ [FIM]

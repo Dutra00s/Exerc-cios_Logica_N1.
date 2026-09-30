@@ -1,0 +1,46 @@
+EXERCÍCIO 24 — Tabuada
+
+Entrada
+Número inteiro.
+
+
+Processamento
+Multiplicar o número de 1 a 10.
+
+
+Saída
+Tabuada
+
+Pseudocódigo
+ALGORITMO Tabuada
+
+VAR
+    numero, i, resultado: inteiro
+
+INÍCIO
+    LEIA(numero)
+
+    PARA i DE 1 ATÉ 10 FAÇA
+        resultado ← numero * i
+        ESCREVA(numero, " × ", i, " = ", resultado)
+    FIMPARA
+
+FIM
+
+Fluxograma
+
+[INÍCIO]
+    ↓
+[Leia número]
+    ↓
+[i ← 1]
+    ↓
+[i <= 10?] ─ NÃO → [FIM]
+    ↓ SIM
+[resultado ← número × i]
+    ↓
+[Mostre resultado]
+    ↓
+[i ← i + 1]
+    ↓
+[volta]

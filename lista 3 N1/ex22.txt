@@ -1,0 +1,29 @@
+EXERCÍCIO 22 — Contagem regressiva
+
+Pseudocódigo
+ALGORITMO ContagemRegressiva
+
+VAR
+    i: inteiro
+
+INÍCIO
+    PARA i DE 10 ATÉ 0 PASSO -1 FAÇA
+        ESCREVA(i)
+    FIMPARA
+
+    ESCREVA("Fim da contagem!")
+
+FIM
+
+Fluxograma
+[INÍCIO]
+    ↓
+[i ← 10]
+    ↓
+[i >= 0?] ─ NÃO → [Fim da contagem] → [FIM]
+    ↓ SIM
+[Mostre i]
+    ↓
+[i ← i - 1]
+    ↓
+[volta]

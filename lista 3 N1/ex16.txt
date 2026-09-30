@@ -1,0 +1,64 @@
+EXERCÍCIO 16 — Situação acadêmica
+
+Entradas
+Duas notas
+
+Processamento
+
+media = (nota1 + nota2) / 2
+
+Depois:
+
+media >= 7 → Aprovado.
+media >= 5 → Recuperação.
+Caso contrário → Reprovado
+
+Saídas
+Média
+Situação
+
+Pseudocódigo
+ALGORITMO SituacaoAcademica
+
+VAR
+    n1, n2, media: real
+
+INÍCIO
+    LEIA(n1)
+    LEIA(n2)
+
+    media ← (n1 + n2) / 2
+
+    SE media >= 7 ENTÃO
+        situacao ← "Aprovado"
+    SENÃO SE media >= 5 ENTÃO
+        situacao ← "Recuperação"
+    SENÃO
+        situacao ← "Reprovado"
+    FIMSE
+
+    ESCREVA("Média: ", media)
+    ESCREVA("Situação: ", situacao)
+
+FIM
+
+Fluxograma
+[INÍCIO]
+    ↓
+[Leia N1 e N2]
+    ↓
+[Calcule média]
+    ↓
+[média >= 7?]
+ ↙          ↘
+SIM         NÃO
+ ↓           ↓
+[Aprovado] [média >= 5?]
+              ↙      ↘
+            SIM      NÃO
+             ↓        ↓
+       [Recuperação] [Reprovado]
+              ↘       ↙
+          [Mostre média/situação]
+                  ↓
+                [FIM]

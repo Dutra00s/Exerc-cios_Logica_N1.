@@ -1,0 +1,56 @@
+EXERCÍCIO 28 — Maior número
+
+Entrada
+10 números
+
+Processamento
+Comparar cada número com o maior encontrado até o momento
+
+Saída
+Maior número
+
+Pseudocódigo
+ALGORITMO MaiorDezNumeros
+
+VAR
+    i: inteiro
+    numero, maior: real
+
+INÍCIO
+    LEIA(numero)
+    maior ← numero
+
+    PARA i DE 2 ATÉ 10 FAÇA
+        LEIA(numero)
+
+        SE numero > maior ENTÃO
+            maior ← numero
+        FIMSE
+    FIMPARA
+
+    ESCREVA("Maior número: ", maior)
+
+FIM
+
+Fluxograma
+[INÍCIO]
+    ↓
+[Leia primeiro número]
+    ↓
+[maior ← primeiro número]
+    ↓
+[i ← 2]
+    ↓
+[i <= 10?] ─ NÃO → [Mostre maior] → [FIM]
+    ↓ SIM
+[Leia número]
+    ↓
+[número > maior?]
+ ↙          ↘
+SIM         NÃO
+ ↓           |
+[maior←número] |
+      ↘       ↙
+      [i ← i+1]
+          ↓
+        [volta]

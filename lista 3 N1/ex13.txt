@@ -1,0 +1,40 @@
+EXERCÍCIO 13 — Número par ou ímpar
+
+Entrada
+Número inteiro
+
+Processamento
+Calcular o resto da divisão por 2
+
+Saída
+Par ou ímpar
+
+Pseudocódigo
+ALGORITMO ParOuImpar
+
+VAR
+    numero: inteiro
+
+INÍCIO
+    LEIA(numero)
+
+    SE numero MOD 2 = 0 ENTÃO
+        ESCREVA("Par")
+    SENÃO
+        ESCREVA("Ímpar")
+    FIMSE
+
+FIM
+Fluxograma
+
+[INÍCIO]
+    ↓
+[Leia número]
+    ↓
+[número MOD 2 = 0?]
+   ↙          ↘
+ SIM          NÃO
+  ↓             ↓
+[PAR]        [ÍMPAR]
+   ↘           ↙
+       [FIM]

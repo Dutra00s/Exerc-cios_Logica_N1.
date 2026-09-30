@@ -1,0 +1,44 @@
+EXERCÍCIO 29 — Senha
+
+Entrada
+Senha digitada
+
+Processamento
+Continuar solicitando enquanto a senha for diferente de 1234
+
+Saída
+Mensagem de senha incorreta ou acesso autorizado
+
+Pseudocódigo
+ALGORITMO Senha
+
+VAR
+    senha: inteiro
+
+INÍCIO
+    ESCREVA("Digite a senha: ")
+    LEIA(senha)
+
+    ENQUANTO senha ≠ 1234 FAÇA
+        ESCREVA("Senha incorreta. Tente novamente.")
+        LEIA(senha)
+    FIMENQUANTO
+
+    ESCREVA("Acesso autorizado.")
+
+FIM
+
+Fluxograma
+[INÍCIO]
+    ↓
+[Leia senha]
+    ↓
+[senha = 1234?]
+   ↙          ↘
+ SIM          NÃO
+  ↓             ↓
+[Acesso] [Senha incorreta]
+  ↓             ↓
+[FIM]       [Leia novamente]
+                ↓
+              [volta]

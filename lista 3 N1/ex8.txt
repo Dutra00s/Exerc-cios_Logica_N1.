@@ -1,0 +1,41 @@
+EXERCÍCIO 8 — Salário mensal
+
+Entradas
+Quantidade de horas trabalhadas
+Valor recebido por hora
+
+Processamento
+
+salario = horas × valorHora
+
+Saída
+Salário bruto.
+
+Pseudocódigo
+ALGORITMO SalarioMensal
+
+VAR
+    horas, valorHora, salario: real
+
+INÍCIO
+    LEIA(horas)
+    LEIA(valorHora)
+
+    salario ← horas * valorHora
+
+    ESCREVA("Salário bruto: R$ ", salario)
+
+FIM
+
+Fluxograma
+[INÍCIO]
+    ↓
+[Leia horas]
+    ↓
+[Leia valor por hora]
+    ↓
+[salario ← horas × valorHora]
+    ↓
+[Mostre salário]
+    ↓
+[FIM]

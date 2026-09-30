@@ -1,0 +1,94 @@
+EXERCÍCIO 30 — Caixa eletrônico
+
+Entradas
+Saldo inicial
+Opção do menu
+Valor de depósito ou saque
+
+Processamento
+Consultar saldo
+Depositar
+Verificar saldo antes de sacar
+Repetir até escolher sair
+
+Saídas
+Saldo
+Mensagens de depósito
+Mensagens de saque
+Mensagem de saldo insuficiente
+
+Pseudocódigo
+ALGORITMO CaixaEletronico
+
+VAR
+    saldo, valor: real
+    opcao: inteiro
+
+INÍCIO
+    ESCREVA("Digite o saldo inicial: ")
+    LEIA(saldo)
+
+    REPITA
+
+        ESCREVA("1. Consultar saldo")
+        ESCREVA("2. Depositar")
+        ESCREVA("3. Sacar")
+        ESCREVA("4. Sair")
+        LEIA(opcao)
+
+        SE opcao = 1 ENTÃO
+            ESCREVA("Saldo: R$ ", saldo)
+
+        SENÃO SE opcao = 2 ENTÃO
+            LEIA(valor)
+            saldo ← saldo + valor
+            ESCREVA("Depósito realizado.")
+
+        SENÃO SE opcao = 3 ENTÃO
+            LEIA(valor)
+
+            SE valor <= saldo ENTÃO
+                saldo ← saldo - valor
+                ESCREVA("Saque realizado.")
+            SENÃO
+                ESCREVA("Saldo insuficiente.")
+            FIMSE
+
+        SENÃO SE opcao = 4 ENTÃO
+            ESCREVA("Saindo...")
+
+        SENÃO
+            ESCREVA("Opção inválida.")
+        FIMSE
+
+    ATÉ opcao = 4
+
+FIM
+
+Fluxograma
+[INÍCIO]
+    ↓
+[Leia saldo inicial]
+    ↓
+[Mostre menu]
+    ↓
+[Leia opção]
+    ↓
+[Opção 1?] → [Mostre saldo]
+    ↓
+[Opção 2?] → [Leia valor → Some ao saldo]
+    ↓
+[Opção 3?] → [Leia valor]
+                    ↓
+              [saldo suficiente?]
+                ↙          ↘
+              SIM          NÃO
+               ↓             ↓
+          [Faça saque]   [Saldo insuficiente]
+                ↘          ↙
+                   ↓
+              [Opção = 4?]
+                 ↙    ↘
+               SIM    NÃO
+                ↓       ↓
+             [FIM] [Volta ao menu]

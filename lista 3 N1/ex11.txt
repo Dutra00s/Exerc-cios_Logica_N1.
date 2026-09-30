@@ -1,0 +1,40 @@
+EXERCÍCIO 11 — Maior de idade
+
+Entradas
+Idade.
+
+Processamento
+Verificar se idade é maior ou igual a 18
+
+Saída
+"Maior de idade" ou "Menor de idade"
+
+Pseudocódigo
+ALGORITMO MaiorIdade
+
+VAR
+    idade: inteiro
+
+INÍCIO
+    LEIA(idade)
+
+    SE idade >= 18 ENTÃO
+        ESCREVA("Maior de idade")
+    SENÃO
+        ESCREVA("Menor de idade")
+    FIMSE
+
+FIM
+
+Fluxograma
+[INÍCIO]
+    ↓
+[Leia idade]
+    ↓
+[idade >= 18?]
+   ↙       ↘
+ SIM       NÃO
+  ↓          ↓
+[Maior]   [Menor]
+  ↘          ↙
+    [FIM]

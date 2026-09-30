@@ -1,0 +1,66 @@
+EXERCÍCIO 17 — Desconto na compra
+
+Entradas
+Valor da compra
+
+Processamento
+Até R$100 → 0%
+Até R$500 → 5%
+Acima de R$500 → 10%
+Calcular valor do desconto e valor final
+
+Saídas
+Valor original
+Percentual
+Desconto
+Valor final
+
+Pseudocódigo
+ALGORITMO DescontoCompra
+
+VAR
+    valor, percentual, desconto, final: real
+
+INÍCIO
+    LEIA(valor)
+
+    SE valor <= 100 ENTÃO
+        percentual ← 0
+    SENÃO SE valor <= 500 ENTÃO
+        percentual ← 5
+    SENÃO
+        percentual ← 10
+    FIMSE
+
+    desconto ← valor * percentual / 100
+    final ← valor - desconto
+
+    ESCREVA("Valor original: R$ ", valor)
+    ESCREVA("Desconto: ", percentual, "%")
+    ESCREVA("Valor do desconto: R$ ", desconto)
+    ESCREVA("Valor final: R$ ", final)
+
+FIM
+
+Fluxograma
+[INÍCIO]
+    ↓
+[Leia valor]
+    ↓
+[valor <= 100?]
+ ↙          ↘
+SIM         NÃO
+ ↓           ↓
+[0%]     [valor <= 500?]
+            ↙       ↘
+          SIM       NÃO
+           ↓         ↓
+          [5%]      [10%]
+            ↘       ↙
+       [Calcule desconto]
+              ↓
+       [Calcule valor final]
+              ↓
+          [Mostre tudo]
+              ↓
+             [FIM]

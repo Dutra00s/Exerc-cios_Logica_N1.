@@ -1,0 +1,42 @@
+EXERCÍCIO 23 — Números pares
+Entrada
+Não possui
+
+Processamento
+Percorrer de 1 a 100
+Verificar MOD 2
+
+Saída
+Todos os números pares
+
+Pseudocódigo
+ALGORITMO NumerosPares
+
+VAR
+    i: inteiro
+
+INÍCIO
+    PARA i DE 1 ATÉ 100 FAÇA
+        SE i MOD 2 = 0 ENTÃO
+            ESCREVA(i)
+        FIMSE
+    FIMPARA
+
+FIM
+
+Fluxograma
+[INÍCIO]
+    ↓
+[i ← 1]
+    ↓
+[i <= 100?] ─ NÃO → [FIM]
+    ↓ SIM
+[i MOD 2 = 0?]
+   ↙       ↘
+ SIM       NÃO
+  ↓          |
+[Mostre i]   |
+   ↘        ↙
+ [i ← i + 1]
+      ↓
+   [volta]
